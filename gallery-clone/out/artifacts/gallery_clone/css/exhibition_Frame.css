@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+	html{
+		scroll-behavior:smooth;
+	}
+	.ex_wrapper a{
+		text-decoration: none;
+		color:black;
+		font-family: barlow-medium, barlow, sans-serif;
+		font-size:14px;
+		margin-right:30px;
+	}
+	#s2_2220, #s2_1917, #s2_1614, #s2_1311{
+		width:1000px;
+		margin:auto;
+	}
+	.ex_info_wrapper{
+		margin-left:50px;
+		vertical-align: middle;
+		display:inline-block;
+		width:269px;
+		height:450px;	
+	}
+	.ex_img{
+		width:224px;
+		height:210px;
+	}
+	.ex_title_wrapper{
+		width:240px;
+		padding-top:20px;
+	}
+	#s2_top_wrapper{
+		padding-top:200px;
+		padding-bottom:80px;
+		display:flex;						/* 양쪽끝 정렬*/		
+		justify-content: space-between;		/* 양쪽끝 정렬*/
+		
+	}
+	#s2_top_title{
+		font-family: barlow-medium, barlow, sans-serif;
+		font-size: 20px;
+	}
+	.s2_top_wrapper_else{
+		text-align:right;
+		padding-bottom:80px;
+	}
+	#s2_year_2220 a:nth-child(1){color:#acacac;}
+	#s2_year_1917 a:nth-child(2){color:#acacac;}
+	#s2_year_1614 a:nth-child(3){color:#acacac;}
+	#s2_year_1311 a:nth-child(4){color:#acacac;}
+	.ex_date{font-family: barlow-extralight, barlow, sans-serif; font-size:15px;}
+	.ex_titleName, .ex_artistName{font-family: barlow-medium, barlow, sans-serif; font-size:17px;}

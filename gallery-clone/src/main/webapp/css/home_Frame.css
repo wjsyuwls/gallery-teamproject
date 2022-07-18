@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+div#home_Frame {
+	margin: auto;
+}
+#reservation_Sector {
+	padding-top: 100px;
+	margin: auto;
+	width: 1000px;
+	height: 800px;
+}
+#reservation_float {
+	float: left;
+	margin: 0px 6.6px;
+}
+#reservation_float:after {
+	clear: both;
+}
+a#exhibition_Title {
+	font: 25px barlow-medium, barlow, sans-serif;
+	margin: 20px 0px;
+}
+p#exhibition_Artist, p#exhibition_Date {
+	font: 20px barlow-extralight, barlow, sans-serif;
+	margin: 10px 0px;
+}
+p#exhibition_Floor {
+	font: 18px barlow-extralight, barlow, sans-serif;
+	margin: 10px 0px;
+}
+
+input#reservation_Btn {
+	border: 0;
+	color: #FFF;
+	Font: 15px envenir-it-w01_35-light1475496, sans-serif;
+	background-color: black;
+	width: 108px;
+	height: 30px;
+}
+#exhibition_location {
+	padding-top:80px;
+	width: 1000px;
+	display:inline-block;
+	text-align: right;
+	font: 18px barlow-extralight, barlow, sans-serif;
+	color: #8D8D8D;
+}
+#exhibition_location > table {
+	width: 100%;
+}
+#home_pastEx {
+	width: 100%; 
+	height: 1400px; 
+	background-color: #F2F2F2;
+}
+#pastEx_Frame {
+	width: 1000px;
+	margin: auto;
+}
+#pastEx_Title {
+	padding-top:100px;
+	padding-bottom:50px;
+	font-weight:bold;
+	color:dimgray;
+	font: 33px barlow-medium, barlow, sans-serif;
+}
+.pastEx_content {
+	width: 1000px;
+	display: inline-block;
+	text-align: center;
+}
+.pastEx_incontent{
+	width: 320px;
+	display: inline-block;
+	text-align: center;
+	height: 500px;
+	margin: 0 auto;
+	vertical-align: top;
+}
+.pastEx_img{
+	width: 205px;
+	height: 290px;
+}
+
+.pastEx_titleName{
+	 font: 16px barlow-medium, barlow, sans-serif; 
+	 margin: 10px 0px;
+	 width: 300px;
+}
+.pastEx_artistName{
+	font: 14px barlow-extralight, barlow, sans-serif;
+	display: inline-block;
+	margin: 3px 0px;
+	width: 300px;
+}
+#subscribe_Frame {
+	width: 100%;
+	height: 450px;
+}
+#subscribe_Move_Center {
+	 width: 1000px; 
+	 margin: auto;
+	 text-align: center;
+}
+#subscribe_Title {
+	font: 25px barlow-medium, barlow, sans-serif;
+	padding: 1em;
+}
+#subscribe_Move_Center > table {
+	margin: auto;
+}
+#subscribe_Underline {
+	 width: 3em; 
+	 height: 1.5em; 
+	 border-top: 5px solid black; 
+	 margin: auto;
+}
+#subscribe_Email {
+  width:269px;
+  height:50px;
+  font-size:9px;
+  padding: 3px 3px 3px 21px;
+  font-size: 15px;
+}
+#subscribe_Email:focus {
+	outline: none;	/* focus가 됐을경우 아웃라인을 없애서 테두리 색이 보이게 설정 */
+	border: 0.5px solid red;
+}
+#subscribe_Btn {
+	width:300px;
+	height:40px;
+	background:black;
+	color:white;
+	border: 0;
+	font: 17px barlow-medium, barlow, sans-serif;
+}
+#subscribe_Btn:hover {
+	background-color: #ccc;
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+html{
+	scroll-behavior:smooth;
+}
+#ex_detail_solo_wrapper {
+	width: 1000px;
+	text-align: center;
+	margin: auto;
+	padding-top: 200px;
+}
+
+.artistName {
+	text-align: left;
+	font-size: 25px;
+	font-family: barlow-medium, barlow, sans-serif;
+	padding-bottom: 20px;
+}
+
+.titleDate {
+	text-align: left;
+	font-size: 21px;
+	font-family: barlow-medium, barlow, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom:100px;
+}
+
+.menu a, .menu1 a, .menu2 a, .menu3 a {
+	padding-right: 30px;
+	text-decoration: none;
+	color: black;
+}
+.menu1 a:nth-child(1), .menu2 a:nth-child(2), .menu3 a:nth-child(3){color:#acacac;}
+
+#inquiry {
+	padding-top:100px;
+	width: 62px;
+	margin: auto;
+	text-align: center;
+	font-family: barlow-medium, barlow, sans-serif;
+	font-size: 20px;
+	padding-bottom:150px;
+}
+
+#inquiry_border {
+	margin: auto;
+	width: 43px;
+	border-bottom: 2px solid #acacac;
+	margin-bottom: 8px;
+}
+/* INTRO SECTION */
+#intro_section {
+	width: 980px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+#intro_img {
+	width: 300px;
+	height: 410px;
+}
+
+#intro_content{
+	width: 610px;
+	height: 530px;
+	font-family: barlow-medium, barlow, sans-serif;
+	font-size: 12px;
+	padding-bottom: 200px;
+}
+/* Works section */
+#works_img img:hover{	/* 개인전 작품 사진에 커서가 올라갔을경우 이미지 흐려지면서 살짝 확대되는 기능 */
+   width:250px;
+   height:200px;
+   filter:brightness(70%);
+   transform:scale(1.05);
+   transition:transform 1s;
+}
+#ex_detail_works{padding-bottom:200px;}
+#works_img {
+	width: 800px;
+	margin: auto;
+}
+
+#works_img img {
+	width:250px;
+	height:200px;
+	padding: 5px;
+}
+/* CV SECTION */
+#ex_detail_cv{
+	padding-bottom:100px;
+}
+#cv_section_wrapper{
+	width:700px;
+	margin:auto;
+	text-align:left;
+}
+.cv_section{padding-bottom:25px;}
+.cv_title{
+	font-family: barlow-medium, barlow, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+}
+.slideshow-container img {width:1000px; height:510px;}
+/* effect */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;	
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* 버튼들 좌우 정렬 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+	left:0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* 버튼 호버 */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);

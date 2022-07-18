@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.slide {
+	width: 550px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: 0; 
+}
+
+.slide ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	padding: 0;
+}
+
+.slide ul li {
+	display: inline-block;
+	padding: 0;
+}
+#back {	
+	left: 25px; 
+	transform: rotate(225deg); /* 각도 */
+}
+#next { 
+	right: 25px; 
+	transform: rotate(405deg); /* 각도 */	
+}
+.slide:hover .button{
+	opacity: 1;
+}
+.button {
+	display: block;
+	border-top: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 3px;
+    border-left: 0;
+    border-bottom: 0;
+	outline: 0;
+	cursor: pointer;
+	z-index: 1;
+	background-color: #00ff0000;
+	background: none;
+	position: absolute;
+	top: 50%;
+	opacity: 0;
+	width: 25px;
+    height: 25px;
+    padding-right: 10px;
+}
+.slide:hover .bar{
+	opacity: 1;
+}
+.slide:hover .bar_num{
+	opacity: 1;
+}
+.bar{
+	display: block;
+	opacity: 0;
+	top: 310px;
+	position: absolute;
+	outline: 0;
+	background-color: rgba(255, 255, 255, 0.7);			/*투명도 조절*/
+	width: 100%;
+	border: 0;
+	height: 30px;
+	text-align: right;
+}
+.bar_num{
+	display: block;
+	opacity: 0;
+	background-color: #00ff0000;	/*색상코드:투명*/
+	text-align: right;
+	border: 0;
+	width: 97%;
+	height: 30px;
+	outline: 0;
+}

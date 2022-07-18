@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.loginMapper">
+	<select id="login" parameterType="String" resultType="loginDTO"> 
+		select * from gallerylogin where memid = #{memid}
+	</select>
+	
+	<select id="isExistId" parameterType="String" resultType="loginDTO"> 
+		select * from gallerylogin where memid = #{memid} 
+	</select>
+	
+	<insert id="join" parameterType="loginDTO"> 
+		insert into gallerylogin values (#{memname}, #{memid}, #{pw}, #{gender}, #{email1}, #{email2}, #{phone1}, #{phone2}, #{phone3}, #{addr}) 
+	</insert>
+	
+	<delete id="delete" parameterType="String"> 
+		delete gallerylogin where memid=#{memid} 
+	</delete>
+</mapper>

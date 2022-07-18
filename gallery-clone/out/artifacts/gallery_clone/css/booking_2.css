@@ -1,0 +1,545 @@
+#booking_2_header {
+    width: 600px;
+    height: 200px;
+    border-bottom: 4px solid;
+    margin-left: 680px;
+}
+
+#booking_2_header div {
+    float: right;
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+
+#booking_2_section {
+    width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#booking_2_section_info {
+    width: 700px;
+    float: left;
+}
+
+#booking_2_section_info_img > img {
+    margin-left: 150px;
+}
+
+#booking_2_section_payment {
+    width: 700px;
+    float: left;
+}
+
+#booking_2_footer {
+    height: 150px;
+    clear: both;
+}
+
+/* section calendar */
+
+.sec_cal {
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    font-family: "NotoSansR";
+}
+
+.sec_cal .cal_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 78px;
+}
+
+.sec_cal .cal_nav .year-month {
+    width: 300px;
+    text-align: center;
+    line-height: 1;
+}
+
+.sec_cal .cal_nav .nav {
+    display: flex;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.sec_cal .cal_nav .go-prev,
+.sec_cal .cal_nav .go-next {
+    display: block;
+    width: 50px;
+    height: 78px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec_cal .cal_nav .go-prev::before,
+.sec_cal .cal_nav .go-next::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-width: 1px 1px 0 0;
+    transition: border 0.1s;
+}
+
+.year-month {
+    font-size: 30px;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+
+.sec_cal .cal_nav .go-prev:hover::before,
+.sec_cal .cal_nav .go-next:hover::before {
+    border-color: #ed2a61;
+}
+
+.sec_cal .cal_nav .go-prev::before {
+    transform: rotate(-135deg);
+}
+
+.sec_cal .cal_nav .go-next::before {
+    transform: rotate(45deg);
+}
+
+.sec_cal .cal_wrap {
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sec_cal .cal_wrap .days {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sec_cal .cal_wrap::after {
+    top: 368px;
+}
+
+.sec_cal .cal_wrap .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 7);
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.current.today {
+    background: rgb(242 242 242);
+}
+
+.sec_cal .cal_wrap .dates {
+    display: flex;
+    flex-flow: wrap;
+    height: 290px;
+}
+
+.sec_cal .cal_wrap .day:nth-child(7n -1) {
+    color: #3c6ffa;
+}
+
+.sec_cal .cal_wrap .day:nth-child(7n) {
+    color: #ed2a61;
+}
+
+.sec_cal .cal_wrap .day.disable {
+    color: #ddd;
+}
+
+.day.prev.disable, .day.next.disable {
+    cursor: default;
+}
+
+.day {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* */
+.pay {
+    width: 400px;
+    margin-left: 50px;
+    border-top: 2px solid #ddd;
+    font-family: barlow-medium, barlow, sans-serif;
+    font-size: 18px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.adult {
+    margin-top: 40px;
+}
+
+.adult > div:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+
+.adult > div:nth-child(2) {
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    clear: both;
+}
+
+.adult > div:nth-child(2) > div {
+    display: inline-block;
+}
+
+.teen {
+    margin-top: 25px;
+}
+
+.teen > div:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+
+.teen > div:nth-child(2) {
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    clear: both;
+}
+
+.teen > div:nth-child(2) > div {
+    display: inline-block;
+}
+
+.price {
+    display: inline-block;
+}
+
+.price_btn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+div.price_btn {
+    cursor: default;
+}
+
+#pay_info {
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: barlow-medium, barlow, sans-serif;
+    padding-bottom: 40px;
+    height: fit-content;
+}
+
+#pay_info > div:nth-child(1) {
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#pay_info > div:nth-child(2) {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#pay_info > div:nth-child(2) > div:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+
+#pay_info > div:nth-child(2) > div:nth-child(2) {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+
+#pay_info > div:nth-child(2) > div:nth-child(3) {
+    width: 100px;
+    text-align: right;
+    float: left;
+}
+
+#pay_info > div:nth-child(3) {
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    float: left;
+    border-bottom: 2px solid #ddd;
+}
+
+#pay_info > div:nth-child(3) > div:nth-child(1) {
+    width: 100px;
+    float: left;
+}
+
+#pay_info > div:nth-child(3) > div:nth-child(2) {
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    clear: both;
+}
+
+.ticket_1 {
+    padding-right: 45px;
+}
+
+.ticket_a {
+    width: 100px;
+    text-align: right;
+}
+
+.ticket_t {
+    width: 100px;
+    margin-left: 50px;
+}
+
+/* */
+.reserve_info {
+    width: 400px;
+    margin-left: 50px;
+    clear: both;
+    font-family: barlow-medium, barlow, sans-serif;
+    font-size: 15px;
+    height: 370px;
+    border-bottom: 2px solid #ddd;
+}
+
+.reserve_info > div:nth-child(1) {
+    height: 50px;
+}
+
+.reserve_info div div {
+    display: inline-block;
+}
+
+.reserve_info div div:nth-child(1) {
+    width: 100px;
+    float: left;
+    padding-top: 5px;
+}
+
+.reserve_info > div:nth-child(2) {
+    border-bottom: 1px solid lightgray;
+    float: left;
+}
+
+.reserve_info div div:nth-child(2) {
+    width: 300px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.reserve_info > div:nth-child(2) > div:nth-child(1) {
+    font-size: 20px;
+}
+
+.reserve_info > div:nth-child(2) > div:nth-child(2) {
+    padding-top: 0;
+    text-align: right;
+}
+
+.reserve_info > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+    margin-left: 215px;
+    width: fit-content;
+    height: 30px;
+}
+
+.reserve_info > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.reserve_info > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    width: fit-content;
+    padding-top: 6px;
+    float: left;
+}
+
+.reserve_info div div:nth-child(2) input[type="text"], input[type="tel"], input[type="email"] {
+    width: 200px;
+    height: 25px;
+    padding-right: 50px;
+}
+
+.reserve_info > div:nth-child(3) {
+    margin-top: 70px;
+}
+
+.reserve_info > div:nth-child(3) > div:nth-child(1) {
+    padding-top: 15px;
+}
+
+.reserve_info > div:nth-child(4) > div:nth-child(1) {
+    padding-top: 15px;
+}
+
+.reserve_info > div:nth-child(5) > div:nth-child(1) {
+    padding-top: 15px;
+}
+
+.reserve_info > div:nth-child(6) > div:nth-child(1) {
+    padding-top: 15px;
+}
+
+.reserve_info > div:nth-child(6) > div:nth-child(2) {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.reserve_info > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) {
+    width: fit-content;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.reserve_info > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {
+    width: fit-content;
+    padding-top: 5.1px;
+    margin-left: 1px;
+    text-align: left;
+}
+
+.ticket_info_adult {
+    float: left;
+    width: fit-content;
+    padding-top: 5px;
+}
+
+.ticket_info_teen {
+    float: left;
+    width: fit-content;
+    padding-top: 5px;
+}
+
+.certify_tel {
+    width: 400px;
+    height: 170px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: barlow-medium, barlow, sans-serif;
+    border-bottom: 2px solid #ddd;
+}
+
+.certify_tel > div:nth-child(1) > div:nth-child(1) {
+    width: 100px;
+    margin-top: 3px;
+    font-size: 17px;
+    float: left;
+}
+
+.certify_tel > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+.certify_tel > div:nth-child(1) > div:nth-child(2) {
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    float: left;
+}
+
+.certify_tel > div:nth-child(1) > div:nth-child(2) > input[type="button"] {
+    width: 255px;
+    height: 32px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-content: center;
+}
+
+.input_certifyKey {
+    width: 200px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding-right: 50px;
+}
+
+.input_certifyKey_info {
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.confirm {
+    width: 255px;
+    height: 32px;
+    margin-top: 14px;
+    margin-left: 150px;
+    align-content: center;
+    pointer-events: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.confirm:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.send_certifyKey {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.send_certifyKey:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.pay_btn {
+    width: 400px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.pay_btn:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}

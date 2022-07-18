@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.exMapper">
+	<select id="exList_2220" resultType="dto">
+		select * from exhibitions where ex_date like '%2022%' or ex_date like '%2021%' or ex_date like '%2020%' order by ex_date desc
+	</select>
+	
+	<select id="exList_1917" resultType="dto">
+		select * from exhibitions where ex_date like '%2019%' or ex_date like '%2018%' or ex_date like '%2017%' order by ex_date desc
+	</select>
+	
+	<select id="exList_1614" resultType="dto">
+		select * from exhibitions where ex_date like '%2016%' or ex_date like '%2015%' or ex_date like '%2014%' order by ex_date desc
+	</select>
+	
+	<select id="exList_1311" resultType="dto">
+		select * from exhibitions where ex_date like '%2013%' or ex_date like '%2012%' or ex_date like '%2011%' order by ex_date desc
+	</select>
+	
+	<!-- 개인전 -->
+	<select id="getSoloInfo" parameterType="int" resultType="s_dto">
+		select * from solo_ex where seq=#{seq}
+	</select>
+	
+	<!-- 그룹전시 정보 -->
+	<select id="getInfo" resultType="g_info_dto">
+		select * from group_ex where seq=#{seq}
+	</select>
+	<!--  그룹전시 이미지 -->
+	<select id="getImg" parameterType="java.util.Map" resultType="g_img_dto">
+		<![CDATA[
+		select * from
+		(select rownum rn, tt.* from
+		(select * from group_ex_img order by seq asc) tt)
+		where rn>=#{startNum} and rn<=#{endNum}
+		]]>
+	</select>
+	
+</mapper>

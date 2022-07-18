@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.galleriesMapper">
+	<update id="updateAbout" parameterType="String">
+		update galleries set about=#{about_Content} where internship is null
+	</update>
+	<update id="updateInternship" parameterType="String">
+		update galleries set internship=#{internship_Content} where about is null
+	</update>
+	
+	
+	<select id="selectAbout" resultType="String">
+		select about from galleries where internship is null
+	</select>
+	<select id="selectInternship" resultType="String">
+		select internship from galleries where about is null
+	</select>
+</mapper>

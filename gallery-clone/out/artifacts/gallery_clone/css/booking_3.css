@@ -1,0 +1,182 @@
+#booking_3_header {
+    width: 600px;
+    height: 200px;
+    border-bottom: 4px solid;
+    margin-left: 680px;
+}
+
+#booking_3_header div {
+    float: right;
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+
+#booking_3_section {
+    width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#pay_opt {
+    width: 1000px;
+    margin: auto;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 50px;
+}
+
+#pay_opt > table {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: barlow-medium, barlow, sans-serif;
+    border-collapse: collapse;
+    border: none;
+}
+
+#pay_opt > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    width: 200px;
+}
+
+#pay_opt > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) {
+    border-bottom: 1px solid #ddd;
+}
+
+#pay_opt > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td {
+    padding-bottom: 20px;
+}
+
+#pay_opt > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td {
+    padding-top: 50px;
+}
+
+#pay_opt > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > img:nth-child(1) {
+    width: 90px;
+    height: 100px;
+}
+
+.modify_opt {
+    margin-top: 50px;
+    margin-left: 852px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border: none;
+}
+
+.modify_opt:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+#order_info {
+    width: 1000px;
+    margin: auto;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+
+#order_info > div:nth-child(1) {
+    margin-top: 100px;
+}
+
+#order_info > div:nth-child(1) > table:nth-child(1) {
+    width: 400px;
+    float: left;
+}
+
+#order_info > div:nth-child(1) > table:nth-child(1) td {
+    padding: 15px;
+}
+
+#order_info > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    font-size: 20px;
+}
+
+#order_info > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1) {
+    padding-top: 25px;
+    font-size: 13px;
+    color: mediumseagreen;
+}
+
+.modify_tel {
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border: none;
+}
+
+.modify_tel:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.modify_email {
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border: none;
+}
+
+.modify_email:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+#pay_btn {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+#pay_btn:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+#order_content {
+    width: 400px;
+    margin-left: 200px;
+    font-family: barlow-medium, barlow, sans-serif;
+    font-size: 14px;
+    float: left;
+}
+
+#order_content > p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#order_info > div:nth-child(2) {
+    margin-left: 166px;
+    margin-top: 122px;
+    float: left;
+}
+
+#booking_3_footer {
+    height: 150px;
+    clear: both;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.bookingMapper">
+    <insert id="insert_booking" parameterType="booking.dto.BookingDTO">
+        INSERT INTO booking
+        VALUES (#{price}, #{tot}, #{adult}, #{teen}, #{schedule}, #{name}, #{tel}, #{email})
+    </insert>
+
+    <delete id="cancel_booking" parameterType="String">
+        DELETE booking WHERE name=#{name}
+    </delete>
+</mapper>
